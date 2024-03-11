@@ -22,14 +22,16 @@ const Navbar = () => {
           <div className="menu-icon" onClick={toggleMenu}>
             <TiThMenu />
           </div>
-          <ul className={`navbar-items ${showMenu ? "show" : ""}`}>
-            <li>About</li>
-            <li>Features</li>
-            <li>Customers</li>
-            <li>Updates</li>
-            <li>Help</li>
-            <button className="button">Get for free</button>
-          </ul>
+          <div>
+            <ul className={`navbar-items ${showMenu ? "show" : ""}`}>
+              <li>About</li>
+              <li>Features</li>
+              <li>Customers</li>
+              <li>Updates</li>
+              <li>Help</li>
+              <button className="button">Get for free</button>
+            </ul>
+          </div>
         </div>
       </nav>
     </>

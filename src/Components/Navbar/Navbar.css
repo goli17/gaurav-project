@@ -36,6 +36,9 @@
   display: none;
 }
 @media (max-width: 500px) {
+  .menu-icon {
+    display: block;
+  }
   .navbar-items {
     display: none;
     flex-direction: column;
@@ -43,16 +46,12 @@
     top: 60px;
     left: 0;
     width: 100%;
-    background-color: #eaeefe;
+    background-color: #bfc6e4;
+    color: #000000;
     z-index: 1000;
     align-items: center;
   }
-
-  .navbar-items .show {
+  .navbar-items.show {
     display: flex;
-  }
-
-  .menu-icon {
-    display: block;
   }
 }

@@ -32,3 +32,25 @@
   font-size: 15px;
   border-radius: 10px;
 }
+.menu-icon {
+  display: none;
+}
+@media (max-width: 500px) {
+  .navbar-items {
+    display: none;
+    flex-direction: column; /* Stack menu items vertically */
+    position: absolute; /* Position the menu absolutely */
+    top: 60px; /* Adjust the top position based on your navbar height */
+    left: 0;
+    width: 100%;
+    background-color: #eaeefe; /* Match the navbar background */
+    z-index: 1000; /* Ensure the menu is above other content */
+  }
+  .navbar-items .show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+}

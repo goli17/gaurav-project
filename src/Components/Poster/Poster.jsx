@@ -28,7 +28,7 @@ const Poster = () => {
           </div>
           <div className="poster-right">
             <div className="poster-right-container">
-              <Image src={poster_img_2} alt="image" />
+              <Image src={poster_img_2} alt="image" className="poster-image" />
             </div>
           </div>
         </div>

@@ -18,7 +18,13 @@ const Streamlined = () => {
         </div>
         <div className="stream-cards">
           <div className="stream-card-left">
-            <Image src={card1_img} width={400} height={400} alt="" />
+            <Image
+              src={card1_img}
+              width={400}
+              height={400}
+              alt=""
+              className="cardsss"
+            />
             <p className="title">Integration ecosystem</p>
             <p className="description">
               Enhance your productivity by connecting with your favorite tools,
@@ -26,7 +32,13 @@ const Streamlined = () => {
             </p>
           </div>
           <div className="stream-card-right">
-            <Image src={card2_img} width={400} height={400} alt=" " />
+            <Image
+              src={card2_img}
+              width={400}
+              height={400}
+              alt=" "
+              className="cardsss"
+            />
             <p className="title">Goal setting and tracking</p>
             <p className="description">
               Define and track your goals, breaking down objectives into

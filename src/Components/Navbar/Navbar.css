@@ -1,3 +1,4 @@
+/* Navbar.css */
 * {
   margin: 0px;
   padding: 0px;
@@ -13,9 +14,18 @@
   padding: 10px;
 }
 .navbar-items {
-  display: flex;
-  justify-content: center;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #eaeefe;
+  z-index: 1000;
   align-items: center;
+}
+.navbar-items.show {
+  display: flex;
 }
 .navbar-items li {
   padding: 15px;
@@ -36,20 +46,6 @@
   display: none;
 }
 @media (max-width: 500px) {
-  .navbar-items {
-    display: none;
-    flex-direction: column; /* Stack menu items vertically */
-    position: absolute; /* Position the menu absolutely */
-    top: 60px; /* Adjust the top position based on your navbar height */
-    left: 0;
-    width: 100%;
-    background-color: #eaeefe; /* Match the navbar background */
-    z-index: 1000; /* Ensure the menu is above other content */
-  }
-  .navbar-items .show {
-    display: flex;
-  }
-
   .menu-icon {
     display: block;
   }
